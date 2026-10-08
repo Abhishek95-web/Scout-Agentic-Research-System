@@ -1,0 +1,91 @@
+# Football Intelligence Source Configuration
+#
+# priority:
+#   100 = highest search preference
+#   0   = normal/default discovery
+#
+# enabled:
+#   true  = source can be used
+#   false = source is ignored
+#
+# Priority affects SEARCH PREFERENCE.
+# It does NOT automatically mean the source is truthful.
+
+sources:
+
+  # =========================
+  # GENERAL FOOTBALL
+  # =========================
+
+  - domain: reuters.com
+    priority: 100
+    enabled: true
+    category: general
+
+  - domain: bbc.com
+    priority: 95
+    enabled: true
+    category: general
+
+  - domain: bbc.co.uk
+    priority: 95
+    enabled: true
+    category: general
+
+  - domain: skysports.com
+    priority: 90
+    enabled: true
+    category: general
+
+  - domain: espn.com
+    priority: 85
+    enabled: true
+    category: general
+
+  - domain: theathletic.com
+    priority: 85
+    enabled: true
+    category: general
+
+  - domain: theguardian.com
+    priority: 80
+    enabled: true
+    category: general
+
+
+  # =========================
+  # TRANSFERS
+  # =========================
+
+  - domain: transfermarkt.com
+    priority: 80
+    enabled: true
+    category: transfers
+
+
+  # =========================
+  # OFFICIAL SOURCES
+  # =========================
+
+  - domain: premierleague.com
+    priority: 100
+    enabled: true
+    category: official
+
+  - domain: uefa.com
+    priority: 100
+    enabled: true
+    category: official
+
+
+  # =========================
+  # EXAMPLE CUSTOM SOURCE
+  # =========================
+
+  # Uncomment and modify this when
+  # you want to add another source.
+
+  # - domain: example.com
+  #   priority: 70
+  #   enabled: true
+  #   category: general
